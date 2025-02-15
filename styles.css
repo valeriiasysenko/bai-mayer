@@ -414,8 +414,7 @@ input {
 }
 
 .title-logo{
-    color: #e6d705;
-    
+    color: #e6d705; 
 }
 .title-text{
     font-family: "Roboto", sans-serif;
@@ -519,9 +518,113 @@ input {
     
     }
     .page-title{
-        margin-bottom: 58px;
+        margin-top: 0;
+        margin-bottom: 64px;
         font-size: 62px;
         max-width: 700px;
         max-height: 120px;
+
+    }
+    .title-text{
+        font-size: 32px;
+        margin-bottom: 72px;
+    }
+    .scroll-down::after {
+        width: 44px;
+        height: 44px;
     }
 }
+/*--------------------------About us----------------*/
+.about-us {
+    padding-bottom: 96px;
+    padding-top: 96px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.about-us-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+    position: relative;
+}
+.about-us-title::after{
+    content: "";
+    display: block;
+    width: 50px; 
+    height: 2px; 
+    background-color: #2e2f42; 
+    margin: 8px auto 0;
+
+}
+.about-us-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.about-us-logo {
+    color: #e6d705; 
+}
+.picture-about-us {
+    margin: 0 auto;
+}
+/*----------------Tablet-----------------------------------------*/
+@media screen and (min-width: 768px){
+
+    .about-us {
+        padding-top: 112px;
+        max-width: 768px;
+    }
+    .about-us-title {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    .about-us-text {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .about-us-container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about-us-title::after{
+        width: 80px; 
+        height: 2px; 
+    }
+    .picture-about-us {
+        margin-right: 12px;
+    }
+}
+/*----------------------------Dekstop----------------------------------*/
+@media screen and (min-width: 1158px){
+    .about-us {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        max-width: 1158px;
+        margin: 0 auto;
+    }
+    .about-us-title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .about-us-text {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .about-us-title::after{
+        width: 100px; 
+        height: 4px; 
+    }
+    .picture-about-us {
+        margin-right: 26px;
+        min-width: 360px;
+    }
+}
+   
